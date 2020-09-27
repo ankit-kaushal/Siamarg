@@ -449,20 +449,20 @@ img {
 	ABOUT US SECTION
 ====================*/
 
-#mu-about-us {
+#about-us {
   display: inline;
   float: left;
   width: 100%;
   padding: 80px 0;
 }
 
-.mu-about-us-area {
+.about-us-area {
   display: inline;
   float: left;
   width: 100%;
 }
 
-.mu-about-us-right {
+.about-us-right {
   display: inline;
   float: left;
   margin-top: 20px;
@@ -471,23 +471,23 @@ img {
   width: 100%;
 }
 
-.mu-about-us-right ul {
+.about-us-right ul {
   margin-bottom: 20px;
   padding-left: 25px;
 }
 
-.mu-about-us-right ul li {
+.about-us-right ul li {
   line-height: 24px;
   margin-bottom: 10px;
 }
 
-.mu-about-us-right ul li:before {
+.about-us-right ul li:before {
   content: "\f0da";
   font-family: fontAwesome;
   margin-right: 10px;
 }
 
-.mu-about-us-left {
+.about-us-left {
   display: inline;
   float: left;
   margin-top: 20px;
@@ -1565,7 +1565,7 @@ RESERVATION SECTION
     display: none;
   }
 
-  .mu-about-us-left,
+  .about-us-left,
   .mu-reservation-form {
     text-align: center;
   }
@@ -1702,6 +1702,15 @@ RESERVATION SECTION
 
 @media (max-width: 480px) {
 
+
+  #about-us h1{
+    font-size: 30px;
+  }
+
+  #about-us p{
+    font-size: 18px;
+  }
+
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
    top: 20%;
   }
@@ -1773,7 +1782,7 @@ RESERVATION SECTION
     margin-bottom: 12px;
   }
 
-  #mu-about-us {
+  #about-us {
     padding: 100px 0 50px;
   }
 
