@@ -3094,3 +3094,18 @@ main a {
   font-size: .9em;
 }
 select:focus,input:focus,textarea:focus, div{outline:none}
+
+#mypara {
+  /* The image used */
+  background-image: url("assets/img/counter-bg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
