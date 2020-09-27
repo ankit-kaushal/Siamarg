@@ -294,6 +294,7 @@ img {
   margin-top: 90px;
   width: 100%;
   position: relative;
+  height: 100%!important;
 }
 
 @media (max-width: 767px) {
@@ -1637,11 +1638,18 @@ RESERVATION SECTION
   }
 
   #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
-    font-size: 20px!important;
+    font-size: 30px!important;
     line-height: 75px;
   }
+
+  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
+    font-size: 14px!important;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
   .mu-slider-title span{
-    font-size: 25px!important;
+    font-size: 35px!important;
   }
 
   .mu-top-slider-content .tbutton{
