@@ -296,6 +296,12 @@ img {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  #mu-slider {
+    margin-top: 40px;
+  }
+}
+
 .mu-slider-area {
   display: inline;
   float: left;
@@ -1631,8 +1637,15 @@ RESERVATION SECTION
   }
 
   #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
-    font-size: 50px;
+    font-size: 20px!important;
     line-height: 75px;
+  }
+  .mu-slider-title span{
+    font-size: 25px!important;
+  }
+
+  .mu-top-slider-content .tbutton{
+    display: none;
   }
 
  .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
@@ -1694,7 +1707,8 @@ RESERVATION SECTION
   }
 
   .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
-    display: none;
+   /* display: none;*/
+   font-size: 10px;
   }
  
   .mu-reservation-content p {
@@ -2333,6 +2347,20 @@ footer h5::after{
 }
 
 
+.jbtn{
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .jbtn{
+    text-align: center;
+  }
+
+  .jtxt h2{
+    text-align: center;
+  }
+}
+
 .feature-box {
   transition: background-color 0.3s;
   position: relative;
@@ -2603,8 +2631,6 @@ font-weight: 500;
 
 #about-comp .about-section .image-column .inner-column{
 position: relative;
-padding-left: 120px;
-padding-bottom: 125px;
 }
 
 
@@ -2899,3 +2925,172 @@ color: #fff;}
     opacity: 0;
   }
 }
+
+@media (max-width: 767px) {
+
+  #join-us .row{
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: justify;
+  }
+}
+
+
+main {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  display: flex;
+  margin: 0 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+main h1 {
+  font-size: 3em;
+  font-weight: 100;
+  color: #688d26;
+  margin: 0;
+  font-weight: bold;
+}
+main h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+main h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 0;
+}
+main a {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #688d26;
+  text-decoration: none;
+}
+
+/**********************************************************/
+
+#content{
+  width: 100%;
+  height: 100%;
+}
+
+#contact-form{
+  font-family: "Open Sans", sans-serif;
+  background: #FFF;
+  width: 60%;
+  min-width: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-top: -10px;
+}
+
+@media (max-width: 767px) {
+  #contact-form{
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+#contact-form h1{
+ font-weight: 300; 
+}
+#contact-form input[type=text], #contact-form select, #contact-form textarea{
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+#contact-form select{
+  padding-left: 5px;
+}
+
+#contact-form input[type=text]{
+  padding-top: 2em;
+  padding-bottom: .5em;
+  
+  width: 100%;
+  float: left;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid #DDD;
+  overflow: auto;
+  transition: .4s;
+  cursor: pointer;
+  
+}
+
+#contact-form input[type=text]:focus{
+  outline: none;
+  border-bottom: solid 1px #AAA;
+  cursor: auto;
+}
+
+#contact-form textarea{
+  width: 100%;
+  margin-top: 2em;
+  border: none;
+  border-bottom: 1px solid #DDD;
+}
+
+
+#contact-form input[type=submit]{
+  float: right;
+  margin-top: 2.5em;
+  border: 2px solid #222;
+  background: transparent;
+  font-size: 1em;
+  padding: .8em 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#contact-form input[type=submit]:hover{
+  background: #222;
+  color: #FFF;
+}
+#contact-form input[type=submit]:active{}
+.select-option{
+  width: 48%;
+  border-radius: 0px;
+  float: left;
+  overflow: hidden;
+  margin-top: 2.5em;
+  border-bottom: 1px solid #DDD;
+}
+.right{float: right}
+
+#contact-form select{
+  border: none;
+  width: 95%;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  margin-left: -8px;
+  margin-bottom: 1em;
+}
+
+#contact-form input::placeholder, textarea::placeholder{
+  color: rgb(29, 28, 28);
+}
+
+#contact-form textarea{
+  overflow: hidden;
+  transition: .2s height ease;
+  word-wrap: break-word;
+  resize: none;
+}
+#contact-form p{
+  float: left;
+  margin-top: 4em;
+  color: rgb(0, 0, 0);
+  font-size: .9em;
+}
+select:focus,input:focus,textarea:focus, div{outline:none}
