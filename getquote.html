@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Siamarg</title>
+    <title>Contact | Siamarg</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">   
@@ -19,6 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>   
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
 
   </head>
   <body>
@@ -29,8 +30,8 @@
     </a>
   <!-- END SCROLL TOP BUTTON -->
 
-  <!-- Start header section -->
-  <header id="mu-header">  
+   <!-- Start header section -->
+   <header id="mu-header">  
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
       <div class="container">
         <div class="navbar-header">
@@ -49,22 +50,21 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#join-p">PRODUCTS</a></li>
-           <!--<li class="dropdown">
+            <!--<li><a href="#join-p">PRODUCTS</a></li> -->
+           <li class="dropdown">
               <a href="#ourproducts" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#ourproducts">PRODUCT 1</a></li>                
-                <li><a href="#ourproducts">PRODUCT 2</a></li>  
-                <li><a href="#ourproducts">PRODUCT 3</a></li>
-                <li><a href="#ourproducts">PRODUCT 4</a></li>
-                <li><a href="#ourproducts">PRODUCT 5</a></li>
-                <li><a href="#ourproducts">PRODUCT 6</a></li>           
+                <li><a href="agriculture.html">AGRICULTURE</a></li>                
+                <li><a href="medical.html">MEDICAL</a></li>  
+                <li><a href="domestic.html">DOMESTIC</a></li>
+                <li><a href="industrial.html">INDUSTRIAL</a></li>
+                <li><a href="commercialpacking.html">COMMERCIAL</a></li>         
               </ul>
-            </li> --> 
+            </li> 
             <li><a href="about.html">ABOUT US</a></li>                                           
-            <li><a href="#">BLOG</a></li>                       
+            <li><a href="https://blog.siamarg.com/">BLOG</a></li>                       
             <li><a href="gallary.html">GALLERY</a></li>  
-            <li><a href="#mu-contact">CONTACT US</a></li>   
+            <li><a href="contact.html">CONTACT US</a></li>   
           </ul>                            
         </div>
       </div>          
@@ -87,36 +87,17 @@
             <p class="text-center wow fadeInDown">Fill this form with all the details, so that our team can support you with our products.</p>
         </div>
 
-        <form action="send-mail.php" id="contact-form">
+        <div id="contact-form">
+          <form method="post" action="https://forms.un-static.com/forms/3047ceff7317bad4af3622afb814233523668d0f" onsubmit="return checkForm(this);">
           <input id="user-name"  type="text" tabindex="1" placeholder="Full Name" name="fullname" required>
-          <input id="user-email" type="text" tabindex="2" placeholder="Email Address" name="email" required>
           <input id="user-phone"  type="text" tabindex="3" placeholder="Phone Number" name="phone" required>
-          <input id="user-company" type="text" tabindex="4" placeholder="Company Name" name="company" required>
-          <div class="select-option" tabindex="4">
-            <select name="budget">
-              <option value="-">How many Units you want?</option>
-              <option value="Not Sure">Not Decided</option>
-              <option value="10">10</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="More than 100">More than 100</option>
-            </select>
-          </div>
-          <div class="select-option right" tabindex="5">
-            <select name="Timeline">
-              <option value="-">Select Product</option>
-              <option value="Product 1">Product 1</option>
-              <option value="Product 2">Product 2</option>
-              <option value="Product 3">Product 3</option>
-              <option value="Product 4">Product 4</option>
-              <option value="Product 5">Product 5</option>
-              <option value="Product 6">Product 6</option>
-            </select>
-          </div>
-          <textarea id="user-message" type="text" tabindex="3" placeholder="Further Detail(if any)" name="message" required onkeydown="textAreaAdjust(this)"></textarea>
-          <p>Expect a reply within <strong>2 business days</strong></p>
-          <input type="submit" value="Send Message">
+          <input id="user-email" type="text" tabindex="2" placeholder="Email Address" name="email" required>
+          <textarea id="user-message" type="text" tabindex="3" placeholder="Your Message" name="message" required onkeydown="textAreaAdjust(this)"></textarea>
+          <p style="font-size: 15px;"><input type="checkbox" name="terms"> I accept the <a href="t&c.html" style="color: rgb(0, 0, 0); text-decoration: underline;">Terms and Conditions</a></p>
+          
+          <input type="submit" name="submit" id="submit" value="Send Message">
         </form><!--end of newActivity form-->
+      </div>
     
     
     
@@ -138,23 +119,25 @@
           <div class="row">
               <div class="col-lg-4">
                   <h5 class="headin5_amrc col_white_amrc pt2">ABOUT COMPANY</h5>
-                  <p class="mb10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-              </div>
+                  <p class="mb10">Siamarg was founded by a group of women entrepreneurs with technology and mentoring support by Atal Incubation center - AIC ALEAP We-Hub (Supported by AIM, Niti Ayog, GOI). Our product is derived out of biobased raw materials which acts as an alternative to existing plastic products. </p>
+                  <p><a href="about.html" style="color: #fff; text-decoration: underline; font-size: 15px;">MORE...</a></p>
+                </div>
               
               <div class="col-lg-4 cont">
                   <h5 class="headin5_amrc col_white_amrc pt2">COMPANY LINKS</h5>
                   <ul class="footer_ul_amrc">
-                      <li><a href="#"><i class="fa fa-arrow-circle-right"></i>Link 1</a></li>
-                      <li><a href="#"><i class="fa fa-arrow-circle-right"></i>Link 2</a></li>
-                      <li><a href="#"><i class="fa fa-arrow-circle-right"></i>Link 3</a></li>
+                      <li><a href="privacypolicy.html"><i class="fa fa-arrow-circle-right"></i>Privacy Policy</a></li>
+                      <li><a href="t&c.html"><i class="fa fa-arrow-circle-right"></i>Terms and Conditions</a></li>
+                      <li><a href="disclaimer.html"><i class="fa fa-arrow-circle-right"></i>Disclaimer</a></li>
+                      <li><a href="copyright.html"><i class="fa fa-arrow-circle-right"></i>Copyright Notice</a></li>
                   </ul>
               </div>
               
               <div class="col-lg-4 cont">
                   <h5 class="headin5_amrc col_white_amrc pt2">CONTACT INFO</h5>
-                  <p class="continf"><i class="fa fa-location-arrow"></i>  +91-9999878398  </p>
-                  <p class="continf"><i class="fa fa-phone"></i>  +91-9999878398  </p>
-                  <p class="continf"><i class="fa fa fa-envelope"></i> info@siamarg.com  </p>
+                  <p class="continf"><i class="fa fa-location-arrow"></i>  +91-9953081911  </p>
+                  <p class="continf"><i class="fa fa-phone"></i>  +91-9953081911  </p>
+                  <p class="continf"><i class="fa fa fa-envelope"></i> siamarg.web@gmail.com  </p>
                   <ul class="social_footer_ul" style="margin-left: 0; padding-left: 0; margin-top: 25px;">
                       <li><a href="https://www.facebook.com/" class="face"><i class="fa fa-facebook-f"></i></a></li>
                       <li><a href="https://twitter.com/home" class="twit"><i class="fa fa-twitter"></i></a></li>
@@ -168,7 +151,7 @@
       
       <div class="container">
           <br>
-          <p class="text-center">Copyright @2020 Siamarg Bio Products</p>
+          <p class="text-center">Copyright © Siamarg || <a href="http://www.siamarg.com/" style="color: aqua;">www.siamarg.com</a> || 2020| All Rights Reserved</p>
       </div>
       
   </footer>
@@ -186,3 +169,17 @@
 
   </body>
 </html>
+
+<script>
+
+  function checkForm(form)
+  {
+    if(!form.terms.checked) {
+      alert("Please indicate that you accept the Terms and Conditions");
+      form.terms.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
